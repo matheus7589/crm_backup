@@ -1,0 +1,39 @@
+version: "3"
+volumes:
+  mysql-data:
+    driver: "local"
+
+services:
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - mysql-data:/data
+#      - C:\Users\desk06\Downloads\Compressed:/backup
+    environment:
+      MYSQL_ROOT_PASSWORD: crm
+      MYSQL_DATABASE: crm
+      MYSQL_USER: root
+      MYSQL_PASSWORD: crm
+    ports:
+      - "3307:3306"
+
+  app:
+    image: webdevops/php-apache:7.1
+    volumes:
+      - ./:/app/crm/
+    ports:
+      - "8080:80"
+    links:
+      - mysql
+
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql:db
+    ports:
+      - 8000:80
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: crm
+      MYSQL_ROOT_PASSWORD: crm

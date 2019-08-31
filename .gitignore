@@ -1,0 +1,16 @@
+application/config/app-config.php
+error_log
+node_modules
+application/logs/*.php
+npm-debug.log
+composer.lock
+.idea
+backups
+
+application/helpers/quantum_helper\.php
+application/helpers/codifica_helper.php
+
+
+/vendor/*
+
+bot/

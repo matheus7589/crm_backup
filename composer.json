@@ -1,0 +1,17 @@
+{
+    "require": {
+        "cron/cron": "^1.2",
+        "dsisconeto/ciroute": "^0.0.6",
+        "nesbot/carbon": "^1.22",
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "application/"
+        }
+    }
+}

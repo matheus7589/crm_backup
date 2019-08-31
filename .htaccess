@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+AddDefaultCharset utf-8
+
+# deve ser colocado em producao pra redirecionar o https para http
+#RewriteEngine On
+#RewriteCond %{SERVER_PORT} 443
+#RewriteRule ^(.*)$ http://inorte.ddns.me/crm/$1 [R,L]
+
+#<IfModule mime_module>
+#  AddType application/x-httpd-ea-php71 .php .php7 .phtml
+#</IfModule>

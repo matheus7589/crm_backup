@@ -1,0 +1,50 @@
+.label-pending {
+    background-color: #6600cc !important;
+}
+
+
+.custom-btn-default {
+    color: #FFFFFF;
+    background-color: #626f80;
+    border:0px;
+}
+
+.custom-btn-default:hover,
+.custom-btn-default:focus,
+.custom-btn-default:active,
+.custom-btn-default.active,
+.open .dropdown-toggle.custom-btn-default {
+    color: #FFFFFF;
+    background-color: #516073;
+    border-color: #626f80;
+}
+
+.custom-btn-default:active,
+.custom-btn-default.active,
+.open .dropdown-toggle.custom-btn-default {
+    background-image: none;
+}
+
+.custom-btn-default.disabled,
+.custom-btn-default[disabled],
+fieldset[disabled] .custom-btn-default,
+.custom-btn-default.disabled:hover,
+.custom-btn-default[disabled]:hover,
+fieldset[disabled] .custom-btn-default:hover,
+.custom-btn-default.disabled:focus,
+.custom-btn-default[disabled]:focus,
+fieldset[disabled] .custom-btn-default:focus,
+.custom-btn-default.disabled:active,
+.custom-btn-default[disabled]:active,
+fieldset[disabled] .custom-btn-default:active,
+.custom-btn-default.disabled.active,
+.custom-btn-default[disabled].active,
+fieldset[disabled] .custom-btn-default.active {
+    background-color: #626f80;
+    border-color: #626f80;
+}
+
+.custom-btn-default .badge {
+    color: #626f80;
+    background-color: #FFFFFF;
+}
